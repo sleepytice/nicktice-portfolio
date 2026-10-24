@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Tice | Product Leader</title>
+  <meta name="description" content="Nick Tice - Group Product Manager in Sydney. Portfolio and professional experience in product management across fintech, staffing, and mobility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-dark: #0ea5e9;
+      --border: #334155;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-dark); }
+    header {
+      position: fixed; top: 0; width: 100%; background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border); z-index: 100; padding: 1rem 0;
+    }
+    nav {
+      max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--muted); font-weight: 500; }
+    .nav-links a:hover { color: var(--text); }
+    section { padding: 6rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; padding-top: 5rem;
+      background: radial-gradient(ellipse at top, #1e293b 0%, #0f172a 70%);
+    }
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1rem;
+    }
+    .hero-content .subtitle {
+      font-size: 1.25rem; color: var(--muted); margin-bottom: 1.5rem; font-weight: 400;
+    }
+    .hero-content .tagline {
+      font-size: 1.1rem; max-width: 600px; margin-bottom: 2rem; color: #cbd5e1;
+    }
+    .cta {
+      display: inline-flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: 600; transition: all 0.2s;
+    }
+    .btn-primary { background: var(--accent); color: #0f172a; }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .btn-outline { border: 1px solid var(--accent); color: var(--accent); }
+    .btn-outline:hover { background: rgba(56, 189, 248, 0.1); }
+    h2 {
+      font-family: 'Playfair Display', serif; font-size: 2.25rem; margin-bottom: 2rem; text-align: center;
+    }
+    .about-grid, .skills-grid { display: grid; gap: 2rem; }
+    @media (min-width: 768px) {
+      .about-grid { grid-template-columns: 1fr 1fr; align-items: center; }
+      .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem;
+    }
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--accent);
+    }
+    .timeline-item {
+      position: relative; margin-bottom: 2.5rem; padding-left: 2rem;
+    }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -2.4rem; top: 0.4rem; width: 0.8rem; height: 0.8rem;
+      background: var(--accent); border-radius: 50%; border: 3px solid var(--bg);
+    }
+    .timeline-item h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+    .timeline-item .company { color: var(--accent); font-weight: 600; }
+    .timeline-item .dates { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .skills-grid .card h3 { margin-bottom: 0.5rem; color: var(--accent); }
+    footer {
+      text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem;
+    }
+    .contact-links { display: flex; gap: 1.5rem; justify-content: center; margin-top: 1rem; }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      section { padding: 4rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nick Tice</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Nick Tice</h1>
+      <p class="subtitle">Group Product Manager</p>
+      <p class="tagline">Product leader with experience across fintech, workforce solutions, and mobility platforms. Based in Sydney, focused on building products that deliver real customer and business outcomes.</p>
+      <div class="cta">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div>
+        <p style="margin-bottom: 1rem;">I’m a product management professional based in Sydney, with a career spanning platforms at Mastercard, product ownership and leadership at Randstad, and current work leading product initiatives at Splend.</p>
+        <p style="margin-bottom: 1rem;">I enjoy the intersection of customer insight, technology delivery, and commercial outcomes — turning ambiguous problems into clear roadmaps and shipping products that teams and users actually value.</p>
+        <p>Master’s graduate from the University of Sydney Business School.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom: 1rem; color: var(--accent);">Quick Facts</h3>
+        <ul style="list-style: none; color: var(--muted);">
+          <li style="margin-bottom: 0.5rem;">📍 Sydney, Australia</li>
+          <li style="margin-bottom: 0.5rem;">💼 Product Leadership</li>
+          <li style="margin-bottom: 0.5rem;">🎓 University of Sydney Business School</li>
+          <li>🔗 Open to conversations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Group Product Manager</h3>
+        <div class="company">Splend</div>
+        <div class="dates">January 2024 – Present</div>
+        <p>Leading product initiatives in vehicle subscription and mobility solutions, supporting drivers and the transition toward more flexible and sustainable ownership models.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Group Product Manager</h3>
+        <div class="company">Oncall Group Australia</div>
+        <div class="dates">January 2023 – January 2024</div>
+        <p>Drove product strategy and delivery in the workforce and staffing space.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Head of Product Management</h3>
+        <div class="company">Randstad</div>
+        <div class="dates">January 2020 – January 2023</div>
+        <p>Led product management function, owning roadmaps and cross-functional delivery for digital products supporting talent and workforce solutions.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Digital Product Owner</h3>
+        <div class="company">Randstad Australia</div>
+        <div class="dates">January 2017 – January 2020</div>
+        <p>Owned digital product outcomes, working closely with engineering, design, and business stakeholders.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Platform Owner</h3>
+        <div class="company">Mastercard</div>
+        <div class="dates">January 2015 – January 2017</div>
+        <p>Responsible for platform ownership within Mastercard’s product and technology environment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Focus Areas</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Product Strategy</h3>
+        <p>Roadmapping, prioritisation, outcome-focused planning, and aligning product work with business goals.</p>
+      </div>
+      <div class="card">
+        <h3>Delivery & Leadership</h3>
+        <p>Leading product teams, stakeholder management, agile practices, and shipping end-to-end.</p>
+      </div>
+      <div class="card">
+        <h3>Domains</h3>
+        <p>Fintech & payments, workforce solutions, mobility & vehicle subscription platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <h3>Master’s Degree</h3>
+      <p class="company" style="color: var(--accent); font-weight: 600; margin: 0.5rem 0;">The University of Sydney Business School</p>
+      <p style="color: var(--muted);">2012 – 2013</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--muted);">
+      Interested in talking product, opportunities, or collaboration? Reach out — I’m based in Sydney and happy to connect.
+    </p>
+    <div class="contact-links">
+      <a href="https://x.com/nicktice_" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="mailto:hello@nicktice.com">Email</a>
+      <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Nick Tice. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">Professional portfolio site.</p>
+  </footer>
+</body>
+</html>
